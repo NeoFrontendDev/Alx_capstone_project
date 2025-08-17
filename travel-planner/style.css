@@ -1,0 +1,692 @@
+.landing_page {
+    height: 145vh;
+    background-image: url(images/landing_page.jpg);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: -30px 20px;
+}
+
+.landing_page h1 {
+    font-family: 'Great Vibes', cursive;
+    font-size: 105px;
+}
+
+.form {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 2rem;
+    border-radius: 8px;
+    backdrop-filter: blur(8px);
+    width: 30%;
+    margin-left: 400px;
+}
+
+.form label {
+    color: #fff;
+    font-family: 'Lato';
+    display: block;
+    margin: 1rem 0;
+    text-align: left;
+}
+
+.form input {
+    width: 100%;
+    padding: 0.5rem;
+    margin-top: 0.3rem;
+    background-color: #b88974;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.form input:hover {
+    background-color: #f2e0bf;
+}
+
+.form p {
+    font-family: 'Great Vibes', cursive;
+    font-size: 25px;
+}
+
+.form a {
+    text-decoration: none;
+    color: #f2e0bf;
+}
+
+.form a:hover {
+    text-decoration: underline;
+}
+
+.form button {
+    background-color: #f2e0bf;
+    border-radius: 10px;
+    border-color: #b88974;
+    font-family: 'Great Vibes', cursive;
+    padding: 5px 10px;
+}
+
+.form button:hover {
+    background-color: #b88974;
+    border-color: #f2e0bf;
+    color: #fff;
+}
+
+.login_page {
+    height: 145vh;
+    background-image: url(images/login.png);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: -30px 20px;
+}
+
+.login_page h1 {
+    font-family: 'Great Vibes', cursive;
+    font-size: 105px;
+    color: #e99e6f;
+}
+
+.login_page p {
+    font-family: 'Lato';
+    font-size: 30px;
+    color: #b49f9d;
+}
+
+.login-form {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 2rem;
+    border-radius: 8px;
+    backdrop-filter: blur(8px);
+    width: 30%;
+    margin-left: 400px;
+}
+
+.login-form label {
+    color: #e99e6f;
+    font-family: 'Lato';
+    display: block;
+    margin: 1rem 0;
+    text-align: left;
+}
+
+.login-form input {
+    width: 100%;
+    padding: 0.5rem;
+    margin-top: 0.3rem;
+    background-color: #b88974;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.login-form input:hover {
+    background-color: #f2e0bf;
+}
+
+.login-form p {
+    font-family: 'Great Vibes', cursive;
+    font-size: 25px;
+}
+
+.login-form a {
+    text-decoration: none;
+    color: #f2e0bf;
+}
+
+.login-form a:hover {
+    text-decoration: underline;
+}
+
+.login-form button {
+    background-color: #f2e0bf;
+    border-radius: 10px;
+    border-color: #b88974;
+    font-family: 'Great Vibes', cursive;
+    padding: 5px 10px;
+}
+
+.login-form button:hover {
+    background-color: #b88974;
+    border-color: #f2e0bf;
+    color: #fff;
+}
+
+.home {
+    background-color: #b88974;
+}
+
+.logo img {
+    height: 50px;
+    width: 50px;
+    mix-blend-mode: screen;
+    margin-left: 5px;
+}
+
+.logo h1 {
+    margin-top: 10px;
+}
+
+.logo {
+    display: flex;
+    flex-direction: row;
+    font-family: 'Great Vibes', cursive;
+    font-size: 30px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    color: #f2b893;
+}
+
+.navlinks {
+    display: flex;
+    gap: 1.5rem;
+    list-style: none;
+    padding: 0;
+    margin-top: 5px;
+    font-family: 'Lato';
+}
+
+.navlinks a, nav ul a {
+  font-weight: bold;
+  color: #f2e0bf;
+  text-decoration: none;
+}
+
+.home {
+    height: 145vh;
+}
+
+.hero-home {
+    background-image: url(images/home.jpg);
+    background-position: 40% 40%;
+    height: 490px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hero-home h1 {
+    font-family: 'Great Vibes', cursive;
+    color:chocolate;
+    text-align: center;
+    font-size: 85px;
+    margin-top: 10px;
+}
+
+.hero-home p {
+    font-family: 'Lato';
+    font-size: 25px;
+    color: rgb(250, 248, 248);
+    text-align: center;
+    padding-top: 10px;
+}
+
+.directions {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 2rem;
+    border-radius: 8px;
+    backdrop-filter: blur(8px);
+    width: 70%;
+    margin-left: 160px;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.directions img {
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+.directions p {
+    font-family: 'Great Vibes', cursive;
+    font-size: 25px;
+}
+
+.quiz-btn button {
+    background-color: #f2b893;
+    margin-left: 590px;
+    padding: 5px 10px;
+    border-radius: 10px;
+    border: none;
+}
+
+.quiz-btn button:hover {
+    background-color: #f2e0bf;
+    color: #fff;
+}
+
+.destination {
+    background-color: #b49f9d;
+    height: 145vh;
+}
+
+.dest-logo {
+    display: flex;
+    flex-direction: row;
+    font-family: 'Great Vibes', cursive;
+    font-size: 30px;    
+}
+
+.dest-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    color: #f2b893;
+}
+
+.dest-logo img {
+    height: 50px;
+    width: 50px;
+    mix-blend-mode: screen;
+    margin-left: 5px;
+}
+
+.dest-logo h1 {
+    margin-top: 10px;
+}
+
+.dest-navlinks {
+    display: flex;
+    gap: 1.5rem;
+    list-style: none;
+    padding: 0;
+    margin-top: 5px;
+    font-family: 'Lato';
+}
+
+.dest-navlinks a, nav ul a {
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.dest-heading {
+    background-color: #b38b85;
+    color: #7b4b55;
+    font-family: 'Great Vibes', cursive;
+    font-size: 90px;
+    text-align: center;
+    margin: -80px 40px;
+    border-radius: 30px;
+}
+
+.rec {
+    text-align: center;
+    color: #7b4b55;
+    font-family: 'Lato';
+    font-size: 30px;
+    margin-top: -55px;
+    text-decoration: underline;
+}
+
+.rec-examples {
+    display: flex;
+    gap: 2.5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.destination-card {
+    background: #b38b85;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 320px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: transform 0.2s ease-in-out;
+}
+
+.destination-card:hover {
+    transform: scale(1.03);
+}
+
+.destination-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.destination-card h2 {
+    font-size: 1.3rem;
+    margin: 0.5rem 0;
+    font-family: 'Lato';
+}
+
+.destination-card p {
+    padding: 0 1rem;
+    font-size: 0.95rem;
+    color: #555;
+    font-family: 'Lato';
+}
+
+.destination-card a {
+    display: inline-block;
+    margin: 0.8rem 0 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #f2e0bf;
+    color: #7b4b55;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.destination-card a:hover {
+    background-color: #7b4b55;
+    color: #b38b85;
+}
+
+.weather {
+    background-color: #7b4b55;
+    height: 145vh;
+}
+
+.weather-logo {
+    display: flex;
+    flex-direction: row;
+    font-family: 'Great Vibes', cursive;
+    font-size: 30px;    
+}
+
+.weather-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    color: #f2b893;
+}
+
+.weather-logo img {
+    height: 50px;
+    width: 50px;
+    mix-blend-mode: screen;
+    margin-left: 5px;
+}
+
+.weather-logo h1 {
+    margin-top: 10px;
+}
+
+.weather-navlinks {
+    display: flex;
+    gap: 1.5rem;
+    list-style: none;
+    padding: 0;
+    margin-top: 5px;
+    font-family: 'Lato';
+}
+
+.weather-navlinks a, nav ul a {
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.weather-head {
+    background-color: #b38b85;
+    color: #7b4b55;
+    font-family: 'Great Vibes', cursive;
+    font-size: 90px;
+    text-align: center;
+    text-align: center;
+    margin: -80px 40px;
+    border-radius: 30px;
+}
+
+.weather-desc {
+    display: flex;
+    flex-direction: column;
+}
+
+.weather-desc p {
+    font-family: 'Lato';
+    font-size: 20px;
+    color: #292828;
+}
+
+.weather-desc input {
+    width: 390px;
+    height: 45px;
+    background-color: #b88974;
+    border-radius: 5px;
+    border: none;
+}
+
+.weather-desc input:hover {
+    background-color: #f2e0bf;
+}
+
+.weather-desc button {
+    background-color: #f2b893;
+    color: #7b4b55;
+    border-radius: 5px;
+    border: none;
+    width: 90px;
+    height: 45px;
+}
+
+.weather-desc button:hover {
+    background-color: #b49f9d;
+    color: #f2b893;
+}
+
+.contact {
+    background-color: #eed78b;
+    height: 145vh;
+}
+
+.cont-logo {
+    display: flex;
+    flex-direction: row;
+    font-family: 'Great Vibes', cursive;
+    font-size: 30px;    
+}
+
+.cont-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    color: #e99e6f;
+}
+
+.cont-logo img {
+    height: 50px;
+    width: 50px;
+    mix-blend-mode: screen;
+    margin-left: 5px;
+}
+
+.cont-logo h1 {
+    margin-top: 10px;
+}
+
+.cont-navlinks {
+    display: flex;
+    gap: 1.5rem;
+    list-style: none;
+    padding: 0;
+    margin-top: 5px;
+    font-family: 'Lato';
+}
+
+.cont-navlinks a, nav ul a {
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.cont-head {
+    background-image: url(images/contact.webp);
+    height: 250px;
+    background-position: 80% 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.cont-head h1 {
+    font-family: 'Great Vibes', cursive;
+    color:chocolate;
+    text-align: center;
+    font-size: 85px;
+    margin-top: 10px;
+}
+
+.cont-form {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 2rem;
+    border-radius: 8px;
+    backdrop-filter: blur(8px);
+    width: 50%;
+    margin-left: 300px;
+    .contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+}
+
+.cont-form label {
+    display: flex;
+    flex-direction: column;
+    font-weight: 600;
+    font-family: 'Lato';
+    color: #7b4b55;
+    text-align: left;
+}
+
+.cont-form input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #f2b893;
+    border-radius: 8px;
+    font-size: 1rem;
+    margin-top: 5px;
+}
+
+textarea {
+    width: 96%;
+    min-height: 120px;
+    padding: 12px;
+    background-color: #e99e6f;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    resize: vertical;
+    font-family: Arial, sans-serif;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+textarea:focus {
+    border-color: #eed78b;
+}
+
+.contact-btn {
+    display: inline-block;
+    background-color: #7b4b55;
+    color: #b38b85;
+    padding: 12px 25px;
+    font-size: 1rem;
+    font-weight: bold;
+    width: 30%;
+    margin-left: 220px;
+    margin-top: 5px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.contact-btn:hover {
+    background-color: #b49f9d;
+    color: #333;
+    transform: translateY(-2px);
+}
+
+.contact-btn:active {
+    transform: translateY(0);
+}
+
+.cont-info {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+}
+
+.cont-info .info-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1rem;
+}
+
+.cont-info i {
+    color: #c27510;
+    font-size: 1.4rem;
+}
+
+.cont-info a {
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.cont-info a:hover {
+    color: #7b4b55;
+}
+
+.footer {
+    background-color: #f2b893;
+    color: #b38b85;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+.ft-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.ft-logo img {
+    height: 40px;
+    mix-blend-mode: screen;
+}
+
+.ft-logo h1 {
+    font-family: 'Great Vibes', cursive;
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+.socials {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.socials a {
+    color: #b88974;
+    font-size: 1.3rem;
+    transition: color 0.3s ease;
+}
+
+.socials a:hover {
+    color: #c27510;
+}

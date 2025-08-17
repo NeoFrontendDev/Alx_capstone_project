@@ -5,16 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="style.css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Lato:wght@400;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Parisienne&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
     <title>Travel Joy</title>
   </head>
-
   <body>
-     <section class="contacts">
+    <section class="contact">
       <div>
-        <nav>
+        <nav class="cont-navbar">
+          <div class="cont-logo">
           <img src="images/logo.png" />
           <h1>Travel Joy</h1>
-          <ul>
+          </div>
+          <ul class="cont-navlinks">
             <li><a href="home.html" data-page="home">Home</a></li>
             <li><a href="#" data-page="quiz">Quiz</a></li>
             <li><a href="destinations.html" data-page="destinations">Destinations</a></li>
@@ -22,12 +26,29 @@
           </ul>
         </nav>
       </div>
-      <div>
+
+      <div class="cont-head">
         <h1>Contacts</h1>
       </div>
-      <div>
+      <div class="cont-form">
         <label for="email">Email<input id="email" type="email" ></label>
-        <label for="message">Message<input id="message" type="text"></label>
+        <label for="message">Message<textarea name="message" placeholder="Your messaage..."></textarea>
+        <button class="contact-btn" type="submit">Send</button>
       </div>
+      <div class="cont-info">
+        <div class="info-item">
+          <i class="fas fa-envelope"></i>
+          <a href="mailto:contact@traveljoy.com">contact@traveljoy.com</a>
+        </div>
+      <div class="info-item">
+        <i class="fas fa-globe"></i>
+        <a href="https://www.traveljoy.com" target="_blank">www.traveljoy.com</a>
+      </div>
+      <div class="info-item">
+        <i class="fas fa-phone"></i>
+        <a href="tel:+1234567890">+1 234 567 890</a>
+      </div>
+  </div>
     </section>
   </body>
+</html>
