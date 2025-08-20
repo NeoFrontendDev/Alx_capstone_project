@@ -690,3 +690,57 @@ textarea:focus {
 .socials a:hover {
     color: #c27510;
 }
+
+.quiz-body {
+    background-color: #f2b893;
+    color: #7b4b55;
+    margin: -30px 40px;
+    border-radius: 30px;
+}
+.quiz-head {
+    font-family: 'Great Vibes', cursive;
+    font-size: 90px;
+    text-align: center;
+}
+.quiz-container {
+    background: #e99e6f;
+    padding: 20px;
+    font-family: 'Lato';
+    max-width: 1300px;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+.question {
+    margin-bottom: 15px;
+}
+
+.quiz-question p {
+    font-weight: bold;
+    color: #7b4b55;
+}
+.result {
+    font-size: 1.2em;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+    background: #e99e6f;
+    border-radius: 8px;
+}
+.quiz-btn button {
+    display: flex;
+    justify-content: center;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: #7b4b55;
+    color: #b38b85;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.quiz-btn button:hover {
+    background-color: #b38b85;
+    color: #7b4b55;
+}

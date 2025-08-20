@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="style.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Lato:wght@400;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Parisienne&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <title>Travel Joy - Personality Quiz</title>
+  </head>
+  <script src="script.js"></script>
+  <body class="quiz-body">
+    <h1 class="quiz-head">Personality Quiz</h1>
+  <div class="quiz-container">
+    <form id="quizForm">
+      
+      <div class="quiz-question">
+        <p>1. At a social gathering, what do you usually do?</p>
+        <label><input type="radio" name="q1" value="introvert"> Stick with one or two close friends in a quiet corner</label><br>
+        <label><input type="radio" name="q1" value="extrovert"> Move around and chat with as many people as possible</label><br>
+        <label><input type="radio" name="q1" value="ambivert"> Mix between hanging out with friends and meeting new people</label><br>
+        <label><input type="radio" name="q1" value="introvert"> Prefer not to attend social gatherings at all</label>
+      </div>
+
+      <div class="quiz-question">
+        <p>2. How do you recharge after a long, tiring day?</p>
+        <label><input type="radio" name="q2" value="introvert"> Spend time alone (reading, gaming, etc.)</label><br>
+        <label><input type="radio" name="q2" value="extrovert"> Call or hang out with friends to unwind</label><br>
+        <label><input type="radio" name="q2" value="ambivert"> Either alone or with company, depending on my mood</label><br>
+        <label><input type="radio" name="q2" value="extrovert"> Go to an event or busy place to distract myself</label>
+      </div>
+
+      <div class="quiz-question">
+        <p>3. In group discussions, what role do you usually play?</p>
+        <label><input type="radio" name="q3" value="introvert"> I prefer listening and only speak when I have something important</label><br>
+        <label><input type="radio" name="q3" value="extrovert"> I lead the conversation and keep it going</label><br>
+        <label><input type="radio" name="q3" value="ambivert"> I speak when I feel comfortable, but also listen to others</label><br>
+        <label><input type="radio" name="q3" value="introvert"> I usually avoid being part of group discussions</label>
+      </div>
+
+      <div class="quiz-question">
+        <p>4. How do you feel about meeting new people?</p>
+        <label><input type="radio" name="q4" value="introvert"> It makes me anxious, I'd rather avoid it</label><br>
+        <label><input type="radio" name="q4" value="extrovert"> I love it! I get excited and energized</label><br>
+        <label><input type="radio" name="q4" value="ambivert"> I don't mind, but I don't go out of my way</label><br>
+        <label><input type="radio" name="q4" value="introvert"> I'll meet them if necessary, but I won't start a conversation</label>
+      </div>
+
+      <div class="quiz-question">
+        <p>5. What's your idea of a perfect weekend?</p>
+        <label><input type="radio" name="q5" value="introvert"> Staying home with books, movies, or hobbies</label><br>
+        <label><input type="radio" name="q5" value="extrovert"> Going out with friends, parties, or events</label><br>
+        <label><input type="radio" name="q5" value="ambivert"> A balance of going out one day and relaxing the other</label><br>
+        <label><input type="radio" name="q5" value="introvert"> Traveling solo or doing something independent</label>
+      </div>
+
+      <div class="quiz-question">
+        <p>6. When working on a project, what do you prefer?</p>
+        <label><input type="radio" name="q6" value="introvert"> Working independently in a quiet environment</label><br>
+        <label><input type="radio" name="q6" value="extrovert"> Collaborating with a lively team</label><br>
+        <label><input type="radio" name="q6" value="ambivert"> Sometimes solo, sometimes team-based</label><br>
+        <label><input type="radio" name="q6" value="introvert"> Small group work with only 1-2 close teammates</label>
+      </div>
+
+      <div class="quiz-btn">
+      <button type="button" onclick="calculateResult()">Submit Quiz</button>
+      </div>
+    </form>
+
+    <div id="result" class="result"></div>
+  </div>
+  </body>
+</html>

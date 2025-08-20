@@ -10,6 +10,7 @@
 
     <title>Travel Joy</title>
   </head>
+  <script src="script.js"></script>
   <body>
     <section class="landing_page">
       <h1>The World Awaits</h1>
@@ -17,7 +18,7 @@
       <label for="email">Email <br> <input id="email" type="email" placeholder="janedoe@example.com" required /></label>
       <label for="password">Password <br> <input id="password" type="password" placeholder="********" pattern="[a-z0-5]{8,}" required></label>
       <p>Already have an account. <a href="login.html">Login</a></p>
-      <button type="submit">Sign In</button>
+      <button id="signupBtn" type="submit">Sign In</button>
       </div>
     </section>
 
@@ -30,7 +31,7 @@
           </div>
           <ul class="navlinks">
             <li><a href="destinations.html" data-page="destinations">Destinations</a></li>
-            <li><a href="#" data-page="quiz">Quiz</a></li>
+            <li><a href="quiz.html" data-page="quiz">Quiz</a></li>
             <li><a href="weather.html" data-page="weather">Weather</a></li>
             <li><a href="contact.html" data-page="contacts">Contacts</a></li>
           </ul>
@@ -62,7 +63,7 @@
           </div>
           <ul class="dest-navlinks">
             <li><a href="home.html" data-page="home">Home</a></li>
-            <li><a href="#" data-page="quiz">Quiz</a></li>
+            <li><a href="quiz.html" data-page="quiz">Quiz</a></li>
             <li><a href="weather.html" data-page="weather">Weather</a></li>
             <li><a href="contact.html" data-page="contacts">Contacts</a></li>
           </ul>
@@ -101,7 +102,7 @@
           </div>
           <ul class="weather-navlinks">
             <li><a href="home.html" data-page="home">Home</a></li>
-            <li><a href="#" data-page="quiz">Quiz</a></li>
+            <li><a href="quiz.html" data-page="quiz">Quiz</a></li>
             <li><a href="destinations.html" data-page="destinations">Destinations</a></li>
             <li><a href="contact.html" data-page="contacts">Contacts</a></li>
           </ul>
@@ -112,7 +113,7 @@
       </div>
       <div class="weather-desc">
         <p>Get 7-days forecast for a destination of your choosing.</p>
-        <label id="city"><input for="city" type="text" placeholder="Enter city..."></label>
+        <label id="city"><input for="city" type="text" placeholder="Enter a city..."></label>
         <button type="submit">Check</button>
       </div>
     </section>
@@ -126,7 +127,7 @@
           </div>
           <ul class="cont-navlinks">
             <li><a href="home.html" data-page="home">Home</a></li>
-            <li><a href="#" data-page="quiz">Quiz</a></li>
+            <li><a href="quiz.html" data-page="quiz">Quiz</a></li>
             <li><a href="destinations.html" data-page="destinations">Destinations</a></li>
             <li><a href="weather.html" data-page="weather">Weather</a></li>
           </ul>
