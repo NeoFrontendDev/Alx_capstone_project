@@ -12,7 +12,7 @@
   </head>
   <script src="script.js"></script>
   <body>
-     <section class="weather">
+    <section class="weather">
       <div>
         <nav class="weather-navbar">
           <div class="weather-logo">
@@ -30,11 +30,13 @@
       <div class="weather-head">
         <h1>Weather</h1>
       </div>
-      <div class="weather-desc">
-        <p>Get 7-days forecast for a destination of your choosing.</p>
-        <label id="city"><input for="city" type="text" placeholder="Enter a city..."></label>
-        <button type="submit">Check</button>
-      </div>
-    </section>
+
+      <div class="weather-forecast">
+      <h2>Weather Forecast</h2>
+        <input type="text" id="cityInput" placeholder="Enter a city" />
+        <button onclick="getWeather()">Check Weather</button>
+  
+      <div id="weatherResult"></div>
+    </section> 
   </body>
 </html>
