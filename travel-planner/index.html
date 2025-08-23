@@ -50,7 +50,7 @@
         <p>Plan & Go</p>
         </div>
       <div class="quiz-btn">
-           <button type="submit">Take the Quiz</button>
+           <button type="submit" onclick="window.location.href='quiz.html'">Take the Quiz</button>
         </div>
     </section>
 
@@ -72,11 +72,11 @@
       <div class="dest-heading">
         <h1>Destinations</h1>
       </div>
+     <div class="rec-locations-container">
       <div class="rec">
         <h1>Recommendations</h1>
-      </div>
-      <div class="rec-examples">
-        <div class="destination-card">
+        <div class="rec-examples">
+          <div class="destination-card">
         <img src="images/destination_1.avif" alt="Tokyo, Japan"/>
         <h2>Tokyo, Japan</h2>
         <p>Perfect for the curious explorer. <a href="https://www.tripadvisor.com/Attraction_Products-g298184-a_contentId.1184174385073099+268450130-Tokyo_Tokyo_Prefecture_Kanto.html" >More</a></p>
@@ -86,13 +86,17 @@
         <h2>Paris, France</h2>
         <p>For the romantic and artistic. <a href="https://www.tripadvisor.com/Attraction_Products-g187147-a_contentId.1185273896368620+268449600-Paris_Ile_de_France.html">More</a></p>
         </div>
-        <div class="destination-card">
-        <img src="images/destination_3.jpg" alt="Cape Town, South Africa"/>
-        <h2>Cape Town, South Africa</h2>
-        <p>Perfect for the advanturous soul. <a href="https://www.localcityguides.com/en/cape-town/activities/all-activities?campaginid=603602153&adgroupid=1293026992276670&targetid=kwd-80814477279280%3Aloc-168&network=o&msclkid=738ed268cf081404cfaebaf3829aeee6&utm_source=bing&utm_medium=cpc&utm_campaign=Cape+Town+ActivitiesC101LCG+GL-In-REST&utm_term=cape+town+city+tour&utm_content=City+Tours&activitiesCategoryId=680175">More</a></p>
-        </div>
-    </div>
+       </div>
+      </div>
+
+      <div id="travel-locations" class="travel-locations">
+        <h2>Explore Travel Locations</h2>
+        <input type="text" id="locationInput" placeholder="Enter a place name" />
+        <button onclick="searchLocations()">Search Locations</button>
+        <div id="locationsResult"></div>
+      </div>
     </section>
+
     <section class="weather">
       <div>
         <nav class="weather-navbar">
@@ -111,11 +115,13 @@
       <div class="weather-head">
         <h1>Weather</h1>
       </div>
-      <div class="weather-desc">
-        <p>Get 7-days forecast for a destination of your choosing.</p>
-        <label id="city"><input for="city" type="text" placeholder="Enter a city..."></label>
-        <button type="submit">Check</button>
-      </div>
+
+      <div class="weather-forecast">
+      <h2>Weather Forecast</h2>
+        <input type="text" id="cityInput" placeholder="Enter a city" />
+        <button onclick="getWeather()">Check Weather</button>
+  
+      <div id="weatherResult"></div>
     </section>
 
     <section class="contact">
