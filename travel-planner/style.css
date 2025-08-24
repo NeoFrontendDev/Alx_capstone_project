@@ -1,5 +1,5 @@
 .landing_page {
-    height: 145vh;
+    height: 100vh;
     background-image: url(images/landing_page.jpg);
     background-size: cover;
     background-position: center;
@@ -7,12 +7,14 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: -30px 20px;
+    padding: 20px;
 }
 
 .landing_page h1 {
     font-family: 'Great Vibes', cursive;
-    font-size: 105px;
+    font-size: clamp(2.5rem, 8vw, 6rem);
+    color: #000;
+    margin-bottom: 1rem;
 }
 
 .form {
@@ -20,13 +22,14 @@
     padding: 2rem;
     border-radius: 8px;
     backdrop-filter: blur(8px);
-    width: 30%;
-    margin-left: 400px;
+    width: 90%;
+    max-width: 500px;
+    margin-left: 0 auto;
 }
 
 .form label {
     color: #fff;
-    font-family: 'Lato';
+    font-family: 'Lato', sans-serif;
     display: block;
     margin: 1rem 0;
     text-align: left;
@@ -47,7 +50,8 @@
 
 .form p {
     font-family: 'Great Vibes', cursive;
-    font-size: 25px;
+    font-size: 1.5rem;
+    color: #fff;
 }
 
 .form a {
@@ -62,9 +66,10 @@
 .form button {
     background-color: #f2e0bf;
     border-radius: 10px;
-    border-color: #b88974;
+    border-color: 1px solid #b88974;
     font-family: 'Great Vibes', cursive;
-    padding: 5px 10px;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
 }
 
 .form button:hover {
@@ -74,7 +79,7 @@
 }
 
 .login_page {
-    height: 145vh;
+    height: 100vh;
     background-image: url(images/login.png);
     background-size: cover;
     background-position: center;
@@ -82,19 +87,21 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: -30px 20px;
+    padding: 20px;
 }
 
 .login_page h1 {
     font-family: 'Great Vibes', cursive;
-    font-size: 105px;
+    font-size: clamp(2.5rem, 8vw, 6rem);
     color: #e99e6f;
+    margin-bottom: 2rem;
 }
 
 .login_page p {
     font-family: 'Lato';
-    font-size: 30px;
+    font-size: clamp(1.2rem, 4vw, 2rem);
     color: #b49f9d;
+    margin-bottom: 2rem;
 }
 
 .login-form {
@@ -102,13 +109,14 @@
     padding: 2rem;
     border-radius: 8px;
     backdrop-filter: blur(8px);
-    width: 30%;
-    margin-left: 400px;
+    width: 90%;
+    max-width: 500px;
+    margin-left: 0 auto;
 }
 
 .login-form label {
     color: #e99e6f;
-    font-family: 'Lato';
+    font-family: 'Lato', sans-serif;
     display: block;
     margin: 1rem 0;
     text-align: left;
@@ -129,7 +137,8 @@
 
 .login-form p {
     font-family: 'Great Vibes', cursive;
-    font-size: 25px;
+    font-size: 1.5rem;
+    color: #fff;
 }
 
 .login-form a {
@@ -146,7 +155,8 @@
     border-radius: 10px;
     border-color: #b88974;
     font-family: 'Great Vibes', cursive;
-    padding: 5px 10px;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
 }
 
 .login-form button:hover {
@@ -743,4 +753,43 @@ textarea:focus {
 .quiz-btn button:hover {
     background-color: #b38b85;
     color: #7b4b55;
+}
+
+@media (max-width: 768px) {
+    .landing_page h1 {
+        font-size: clamp(2rem, 10vw, 4rem);
+    }
+    .form {
+        width: 90%;
+        padding: 1.5rem;
+    }
+
+    .login_page h1 {
+        font-size: clamp(2rem, 10vw, 4rem);
+    }
+    .login-form {
+        padding: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .form {
+        padding: 1rem;
+    }
+    .form p {
+        font-size: 1.2rem;
+    }
+    .form button {
+        width: 100%;
+    }
+
+    .login-form {
+        padding: 1rem;
+    }
+    .login-form p {
+        font-size: 1.2rem;
+    }
+    .login-form button {
+        width: 100%;
+    }
 }
