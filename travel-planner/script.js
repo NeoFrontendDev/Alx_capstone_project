@@ -84,3 +84,19 @@ contactBtn.addEventListener("click", (e) => {
 
       document.getElementById("result").innerText = resultText;
     }
+const hamburger = document.getElementById("hamburger");
+
+const navMenus = [
+    document.getElementById("navlinks"),
+    document.getElementById("dest-navlinks"),
+    document.getElementById("weather-navlinks"),
+    document.getElementById("cont-navlinks"),
+];
+
+hamburger.addEventListener("click", () => {
+    navMenus.forEach(menu => {
+        if (menu) {
+            menu.classList.toggle("active");
+        }
+    });
+});
