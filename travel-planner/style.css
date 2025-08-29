@@ -643,11 +643,12 @@
     backdrop-filter: blur(8px);
     width: 50%;
     margin-left: 300px;
-    .contact-form {
+}
+    
+.contact-form {
     display: flex;
     flex-direction: column;
     gap: 15px;
-}
 }
 
 .cont-form label {
