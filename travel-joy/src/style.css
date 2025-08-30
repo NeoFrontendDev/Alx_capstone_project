@@ -1,0 +1,323 @@
+/* ------------------ RESET & FONTS ------------------ */
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Lato:wght@400;700&display=swap');
+
+.login_page, .signup_page {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #b38b85;
+}
+
+.page {
+    padding: 20px;
+    min-height: 100vh;
+}
+
+.centered {
+    text-align: center;
+}
+
+.card, .form-container {
+    border-radius: 10px;
+    padding: 1rem;
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(8px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+h1, h2, h3 {
+    font-family: 'Great Vibes', cursive;
+}
+
+h1 {
+    font-size: clamp(2rem, 6vw, 6rem);
+}
+
+.navbar, .dest-navbar, .weather-navbar, .cont-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    gap: 1rem;
+    background-color: #b38b85;
+    color: #f2e0bf;
+}
+
+.navlinks, .dest-navlinks, .weather-navlinks, .cont-navlinks {
+    display: flex;
+    gap: 1.5rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navlinks a, .dest-navlinks a, .weather-navlinks a, .cont-navlinks a {
+    color: #f2e0bf;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.hamburger {
+    display: none;
+    font-size: 1.8rem;
+    cursor: pointer;
+}
+
+.hero-home {
+    background-image: url('/images/home.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #7b4b55;
+    padding: 0 20px;
+}
+
+.hero-home h1 {
+    font-family: 'Great Vibes', cursive;
+    font-size: clamp(2rem, 5vw, 4rem);
+    margin-bottom: 15px;
+    color: #ffd3a5;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.hero-home p {
+    font-family: 'Lato', sans-serif;
+    font-size: clamp(1rem, 2.5vw, 1.5rem);
+    color: #f2e0bf;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.4);
+}
+
+.home-quiz {
+    display: flex;
+    justify-content: center;
+    margin: 3rem 0;
+}
+
+.form, .login-form, .cont-form, .travel-locations, .weather-forecast {
+    width: 90%;
+    max-width: 500px;
+    margin: 20px auto;
+}
+
+.form input, .login-form input, .cont-form input, .travel-locations input, .weather-forecast input,
+textarea {
+    width: 100%;
+    padding: 0.7rem 1rem;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    margin-top: 0.3rem;
+    font-family: 'Lato', sans-serif;
+    font-size: 1rem;
+}
+
+.form button, .login-form button, .contact-btn, .travel-locations button, .weather-forecast button,
+.quiz-btn button {
+    padding: 15px 30px;
+    font-family: 'Great Vibes', cursive;
+    font-size: 1.5rem;
+    color: #7b4b55;
+    background-color: #f2e0bf;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.form button, .login-form button, .travel-locations button, .weather-forecast button {
+    background-color: #f2e0bf;
+}
+
+.form button:hover, .login-form button:hover, .travel-locations button:hover, .weather-forecast button:hover,
+.contact-btn:hover, .quiz-btn button:hover {
+    background-color: #7b4b55;
+    color: #f2e0bf;
+    transform: scale(1.05);
+}
+
+.directions {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin: 2rem auto;
+    max-width: 900px;
+}
+
+.directions img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.destination-card {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(8px);
+    border-radius: 20px;
+    padding: 1rem 2rem;
+    text-align: center;
+    width: 180px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.destination-card:hover {
+    transform: scale(1.05);
+}
+
+.destination-card img {
+    width: 60%;
+    height: 60px;
+    margin-bottom: 10px;
+    object-fit: cover;
+}
+
+.destination-card h2 {
+    margin: 0.5rem 0;
+}
+
+.destination-card p {
+    font-family: 'Great Vibes', cursive;
+    font-size: 1.1rem;
+    color: #f2e0bf;
+}
+
+.destination-card a {
+    display: inline-block;
+    margin: 0.5rem 0 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #f2e0bf;
+    color: #7b4b55;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.destination-card a:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+}
+
+.quiz-container button {
+    margin: 10px 0;
+}
+
+.footer {
+    text-align: center;
+    background-color: #f2b893;
+    padding: 2rem;
+}
+
+.footer a {
+    color: #b88974;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    color: #c27510;
+}
+
+@media (max-width: 768px) {
+    .navlinks, .dest-navlinks, .weather-navlinks, .cont-navlinks {
+        flex-direction: column;
+        display: none;
+        width: 100%;
+        background-color: #b38b85;
+        padding: 1rem;
+        border-radius: 10px;
+    }
+    .navlinks.active, .dest-navlinks.active, .weather-navlinks.active, .cont-navlinks.active {
+        display: flex;
+        flex-direction: column;
+    }
+    .hamburger {
+      display: block;
+    }
+    .directions {
+      flex-direction: column; text-align: center;
+    }
+    .destination-card {
+      width: 90%; margin: auto;
+    }
+    .form, .login-form, .cont-form, .travel-locations, .weather-forecast {
+      width: 90%; margin: auto;
+    }
+    .login-form, .signup_page .login-form {
+      width: 90%;
+      margin: 20px auto;
+      padding: 2rem;
+    }
+    .login_page h1, .signup_page h1 {
+      text-align: center;
+      font-size: 2rem;
+    }
+    .login_page p, .signup_page p {
+      text-align: center;
+      font-size: 1rem;
+    }
+    .login-form input, .login-form button {
+      width: 100%;
+      font-size: 1rem;
+    }
+     .login_page, .signup_page {
+        background-size: contain;
+        background-position: top center;
+    }
+
+    .login_page h1, .signup_page h1 {
+        font-size: 2rem;
+    }
+
+    .login_page p, .signup_page p {
+        font-size: 1rem;
+    }
+
+    .login-form {
+        width: 90%;
+        padding: 2rem;
+        margin: 20px auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .hamburger {
+      display: block;
+      cursor: pointer;
+    }
+    h1, h2 {
+      font-size: 1.5rem;
+    }
+    p {
+      font-size: 0.9rem;
+    }
+    .hero-home h1 {
+      font-size: 1.5rem;
+    }
+    .hero-home p {
+      font-size: 0.9rem;
+    }
+    .directions img {
+      margin: auto;
+    }
+    .login_page {
+        background-image: url('/images/login-mobile.png');
+    }
+    .signup_page {
+        background-image: url('/images/landing_page-mobile.png');
+    }
+}
