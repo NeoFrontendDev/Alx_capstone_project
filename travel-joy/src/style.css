@@ -203,6 +203,46 @@ h1 {
     text-shadow: 1px 1px 3px rgba(0,0,0,0.4);
 }
 
+.directions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.direction-card {
+    background-color: #f2e0bf;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 1rem;
+    padding: 1.5rem;
+    text-align: center;
+    flex: 1 1 200px;
+    max-width: 250px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.direction-card img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+    object-fit: cover;
+    mix-blend-mode: screen;
+}
+
+.direction-card p {
+    font-size: 1.8rem;
+    font-family: 'Great Vibes', cursive;
+    font-weight: 600;
+    color: #333;
+}
+
+.direction-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+
+
 .quiz-btn {
     background-color: #7b4b55;
     color: #f2b893;
