@@ -241,7 +241,7 @@ h1 {
 .direction-card:hover {
     transform: scale(1.05);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-
+}
 
 .quiz-btn {
     background-color: #7b4b55;
