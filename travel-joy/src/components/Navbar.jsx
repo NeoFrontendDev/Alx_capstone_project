@@ -11,7 +11,7 @@ function Navbar() {
     <nav className="navbar">
       <div className="logo">
         <img src="/images/logo.png" alt="Travel Planner Logo" />
-        <NavLink to="/">✈ Travel Planner</NavLink>
+        <NavLink to="/"><p>Travel Joy</p></NavLink>
       </div>
 
       {/* Hamburger Icon */}

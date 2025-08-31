@@ -26,7 +26,7 @@ function Home() {
         </div>
       </div>
 
-      {/* Quiz Button */}
+      {}
       <div className="home-quiz">
         <Link className="quiz-btn" to="/quiz">Take the Quiz</Link>
       </div>

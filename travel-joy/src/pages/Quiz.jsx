@@ -13,14 +13,26 @@ function Quiz() {
   const [answers, setAnswers] = useState({});
   const [result, setResult] = useState(null);
 
-  const handleAnswer = (qIndex, option) => setAnswers({ ...answers, [qIndex]: option });
+  const handleAnswer = (qIndex, option) => {
+    setAnswers({ ...answers, [qIndex]: option });
+  };
 
   const calculateResult = () => {
     const all = Object.values(answers);
-    const introvert = all.filter(a => ["Reading","Alone time","Quiet observer","Solo tasks","Reserved","Explore alone"].includes(a)).length;
-    const extrovert = all.filter(a => ["Partying","Socializing","Center of attention","Group projects","Outgoing","Meet locals"].includes(a)).length;
+    const introvert = all.filter(a =>
+      ["Reading", "Alone time", "Quiet observer", "Solo tasks", "Reserved", "Explore alone"].includes(a)
+    ).length;
+    const extrovert = all.filter(a =>
+      ["Partying", "Socializing", "Center of attention", "Group projects", "Outgoing", "Meet locals"].includes(a)
+    ).length;
 
-    setResult(introvert > extrovert ? "You are an Introvert 🌙" : extrovert > introvert ? "You are an Extrovert ☀️" : "You are an Ambivert 🌗");
+    setResult(
+      introvert > extrovert
+        ? "You are an Introvert 🌙"
+        : extrovert > introvert
+        ? "You are an Extrovert ☀️"
+        : "You are an Ambivert 🌗"
+    );
   };
 
   return (
@@ -29,9 +41,17 @@ function Quiz() {
       {questions.map((item, i) => (
         <div key={i} className="question">
           <p>{item.q}</p>
-          {item.options.map((opt, j) => (
-            <button key={j} onClick={() => handleAnswer(i, opt)}>{opt}</button>
-          ))}
+          <div className="options">
+            {item.options.map((opt, j) => (
+              <button
+                key={j}
+                onClick={() => handleAnswer(i, opt)}
+                className={answers[i] === opt ? "selected" : ""}
+              >
+                {opt}
+              </button>
+            ))}
+          </div>
         </div>
       ))}
       <div className="quiz-btn">

@@ -30,7 +30,7 @@ function Signup() {
         <input type="email" name="email" placeholder="Email Address" value={formData.email} onChange={handleChange} required />
 
         <input type="password" name="password" placeholder="Password" value={formData.password} onChange={handleChange} required />
-        <p>
+        <p className="acc">
           Already have an account? <Link to="/login">Login</Link>
         </p>
         <button type="submit">Sign Up</button>

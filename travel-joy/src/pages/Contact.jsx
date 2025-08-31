@@ -12,17 +12,39 @@ function Contact() {
   };
 
   return (
-    <div className="page cont-form card">
-      <h2 className="centered">Contact Us</h2>
+    <div className="page contact-container">
+      <h2 className="contact-title">Contact Us</h2>
       {!submitted ? (
         <form onSubmit={handleSubmit} className="contact-form">
-          <input name="name" placeholder="Your Name" onChange={handleChange} required />
-          <input name="email" placeholder="Your Email" onChange={handleChange} required />
-          <textarea name="message" placeholder="Your Message" onChange={handleChange} required></textarea>
+          <input
+            name="name"
+            type="text"
+            placeholder="Your Name"
+            onChange={handleChange}
+            value={form.name}
+            required
+          />
+          <input
+            name="email"
+            type="email"
+            placeholder="Your Email"
+            onChange={handleChange}
+            value={form.email}
+            required
+          />
+          <textarea
+            name="message"
+            placeholder="Your Message"
+            onChange={handleChange}
+            value={form.message}
+            required
+          ></textarea>
           <button type="submit" className="contact-btn">Send</button>
         </form>
       ) : (
-        <p className="centered">Thank you, {form.name}! We’ll get back to you soon.</p>
+        <p className="contact-success">
+          ✅ Thank you, <span>{form.name}</span>! We’ll get back to you soon.
+        </p>
       )}
     </div>
   );

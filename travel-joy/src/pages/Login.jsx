@@ -22,7 +22,7 @@ function Login() {
         <input type="email" name="email" placeholder="Email Address" value={formData.email} onChange={handleChange} required />
 
         <input type="password" name="password" placeholder="Password" value={formData.password} onChange={handleChange} required />
-        <p>
+        <p className="acc">
           Don't have an account? <Link to="/signup">Sign Up</Link>
         </p>
         <button type="submit">Login</button>
