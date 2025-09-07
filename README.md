@@ -1,4 +1,4 @@
-🌍 Travel Planner App
+🌍 Travel Planner App - Travel Joy
 
 A simple and interactive Travel Planner Web Application built with React.
 This project helps users discover destinations, get personalized recommendations through a Personality Quiz, and access real-time weather forecasts and travel information via APIs.
